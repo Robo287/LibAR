@@ -1,0 +1,19 @@
+{
+  "OwlseyBot.en-us": {
+    "rootDialog": true,
+    "triggers": {
+      "": [
+        "WelcomeDialog.en-us"
+      ],
+      "Cancel": [
+        "CancelDialog.en-us"
+      ],
+      "Help": [
+        "HelpDialog.en-us"
+      ],
+      "LuisBase": [
+        "LuisDialog.en-us"
+      ]
+    }
+  }
+}

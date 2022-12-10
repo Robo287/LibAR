@@ -1,0 +1,33 @@
+[import](common.lg)
+
+# SendActivity_WelcomeReturningUser()
+[Activity
+    Text = ${SendActivity_WelcomeReturningUser_text()}
+]
+
+# SendActivity_WelcomeReturningUser_text()
+- Welcome back! I'm listening...
+- Hello again! What can I help with?
+- Good to see you again. What do you want to do now?
+- I'm Owlsey all the time, so you want to tell me what's on your mind?
+- You have reached the wisest Owl at FAU. But you already knew that... how may I assist you?
+# SendActivity_WelcomeNewUser()
+[Activity
+    Text = ${SendActivity_WelcomeNewUser_text()}
+]
+
+# SendActivity_WelcomeNewUser_text()
+- 🖐️ Hey, there! I'm Owlsey, the wisest owl at FAU. How can I help you today?
+- 🖐️ Hi! How can I help?
+- 🖐️ Hello! What do you want to do today?
+
+> Imported: ecb31044e0e5c0b54f49870e6872f158
+- 🖐️Hi, I'm Owlsey. How may I assist you today?
+- 🖐️Owlsey reporting for duty! Hi there, what do you need?
+- 🖐️Hi there I'm Owlsey, I can help you find books, book a study room or call a Librarian. Just ask.
+- 🖐️Welcome to the FAU Augmented Reality Librarian: me Owlsey! I can help you find books, reserve a video conference room, or just get help from a human. Just ask.
+- 🖐️Hi, I'm Owlsey how may I help you? Just ask away.
+- 🖐️Hi there, need some help? Just ask anything you want.
+- 🖐️Hello, I'm Owlsey. If you ask, I can help you find a book!
+- 🖐️Hi there, I'm Owlsey. Please don't freak out about a talking Owl, I'm the wisest at FAU! In anycase, if you'd like me to help you just ask.
+- 🖐️Welcome to my world! I'm Owlsey. I can help you find books, book a room, and all kinds of cool things, just ask.

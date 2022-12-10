@@ -1,0 +1,189 @@
+[import](common.lg)
+
+# SendActivity_RcqN0A()
+[Activity
+    Text = ${SendActivity_RcqN0A_text()}
+]
+
+# SendActivity_RcqN0A_text()
+- Uh Oh something didn't quite work out
+# ConfirmInput_Prompt_lhqRb2()
+[Activity
+    Text = ${ConfirmInput_Prompt_lhqRb2_text()}
+]
+
+# ConfirmInput_Prompt_lhqRb2_text()
+- Would you like to try again?
+# ConfirmInput_Prompt_zY0dKa_text()
+- I'm sorry I didn't quite understand. Would you like to try again?
+# ConfirmInput_Prompt_zY0dKa()
+[Activity
+    Text = ${ConfirmInput_Prompt_zY0dKa_text()}
+]
+
+# SendActivity_74ODcQ()
+[Activity
+    Text = ${SendActivity_74ODcQ_text()}
+]
+
+# SendActivity_74ODcQ_text()
+- I didn't quite understand... ${user.input}
+# SendActivity_qGfXWU()
+[Activity
+    Text = ${SendActivity_qGfXWU_text()}
+]
+
+# SendActivity_qGfXWU_text()
+- ```Ok Looking...
+Author: ${dialog.findBookAuthor}
+Subject: ${dialog.findBookSubject}
+Title: ${dialog.findBookTitle}```
+# SendActivity_DySKDE_text()
+- ```Ok Looking...
+Author: ${dialog.findBookAuthor}
+Subject: ${dialog.findBookSubject}
+Title: ${dialog.findBookTitle}```
+# SendActivity_DySKDE()
+[Activity
+    Text = ${SendActivity_DySKDE_text()}
+]
+
+# SendActivity_6GoUMy_text()
+- ```Ok Looking...
+Author: ${dialog.findBookAuthor}
+Subject: ${dialog.findBookSubject}
+Title: ${dialog.findBookTitle}```
+# SendActivity_6GoUMy()
+[Activity
+    Text = ${SendActivity_6GoUMy_text()}
+]
+
+# ChoiceInput_Prompt_SlhnWC()
+[Activity
+    Text = ${ChoiceInput_Prompt_SlhnWC_text()}
+]
+
+# ChoiceInput_Prompt_SlhnWC_text()
+- Which room? Room 1 or Room 2?
+# LogAction_Text_IHRkR9()
+[Activity
+    Text = ${LogAction_Text_IHRkR9_text()}
+]
+
+# LogAction_Text_IHRkR9_text()
+- Reserve Study Room Selected
+# LogAction_Text_klOtMA()
+[Activity
+    Text = ${LogAction_Text_klOtMA_text()}
+]
+
+# LogAction_Text_klOtMA_text()
+- $(dialog.api_results)
+# SendActivity_RsJsIl_text()
+- Did you mean for me to tell you about, ${turn.results.content.value[0].description}
+# SendActivity_RsJsIl()
+[Activity
+    Text = ${SendActivity_RsJsIl_text()}
+]
+
+# LogAction_Text_oBDOfR()
+[Activity
+    Text = ${LogAction_Text_oBDOfR_text()}
+]
+
+# LogAction_Text_oBDOfR_text()
+- ${user.libCalUrl}
+# LogAction_Text_iDybNb()
+[Activity
+    Text = ${LogAction_Text_O7mH5D_text()}
+]
+
+# LogAction_Text_O7mH5D_text()
+- ${dialog.foreach.value}
+# Ask_Activity_6qx7Wj()
+[Activity
+    Text = ${Ask_Activity_6qx7Wj_text()}
+]
+
+# Ask_Activity_6qx7Wj_text()
+- Could you provide me the title of book
+- Umm I think I'm going to need the title of the book, what is it?
+- I didn't catch the title, could you tell me again?
+- Title pleaes..., if you don't know just say the subject. What is it?
+- What's the title?
+- What's the book called?
+- And the name of the book is?
+# NumberInput_Prompt_VIsJLh()
+[Activity
+    Text = ${NumberInput_Prompt_VIsJLh_text()}
+]
+
+# NumberInput_Prompt_VIsJLh_text()
+- How long would you like the room for (In 10 minute intervals)?
+- Ok this is a wierd question, but can you tell me how long you want the room for in 10 minute intervals?
+- Ok I really hate to ask this, but how long would you like the room for? (Please tell me in 10 minute intervals, like 10, 20, 30 minutes)
+- How long? (say 30, 40 minutes?)
+# SendActivity_QA4QHB_text()
+- Ok I'm searching for first availability for Room ${user.roomSelected} for today. One moment please.
+# SendActivity_QA4QHB()
+[Activity
+    Text = ${SendActivity_QA4QHB_text()}
+]
+
+# SendActivity_Qx3pYX()
+[Activity
+    Text = ${SendActivity_Qx3pYX_text()}
+]
+
+# SendActivity_Qx3pYX_text()
+- The first available to time for the room and minutes requested is from ${dialog.availableRoomResults.content[0].Dates.from} to ${dialog.availableRoomResults.content[0].Dates.to} 
+# TextInput_Prompt_lw3nvX_text()
+- and the title of the book is?
+- What's the book called? Be as specific as you can.
+- I didn't catch the title, what was it?
+- What's the title of the book again?
+- I'm not sure I heard a title or name of a book. Could you specify it now?
+# TextInput_Prompt_lw3nvX()
+[Activity
+    Text = ${TextInput_Prompt_lw3nvX_text()}
+]
+
+# TextInput_Prompt_2LNUE3_text()
+- and the title of the book is?
+- What's the book called? Be as specific as you can.
+- I didn't catch the title, what was it?
+- What's the title of the book again?
+- I'm not sure I heard a title or name of a book. Could you specify it now?
+# TextInput_Prompt_2LNUE3()
+[Activity
+    Text = ${TextInput_Prompt_2LNUE3_text()}
+]
+
+# SendActivity_cwjPFI_text()
+- ```Ok Looking...
+Author: ${dialog.findBookAuthor}
+Subject: ${dialog.findBookSubject}
+Title: ${dialog.findBookTitle}```
+# SendActivity_cwjPFI()
+[Activity
+    Text = ${SendActivity_cwjPFI_text()}
+]
+
+# SendActivity_Fc0w2b()
+[Activity
+    Text = ${SendActivity_Fc0w2b_text()}
+]
+
+# SendActivity_Fc0w2b_text()
+- ```Ok getting info on
+TicketNumber: ${dialog.showTicketInfoTicketNumber}```
+# SendActivity_6TFils()
+[Activity
+    Text = ${SendActivity_6TFils_text()}
+]
+
+# SendActivity_6TFils_text()
+- ```Ok updating 
+TicketNumber: ${dialog.showTicketInfoTicketNumber}
+with
+TicketStatus: ${dialog.showTicketInfoTicketStatus}```

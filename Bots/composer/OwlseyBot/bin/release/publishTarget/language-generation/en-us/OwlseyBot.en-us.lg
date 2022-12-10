@@ -1,0 +1,44 @@
+[import](common.lg)
+
+# SendActivity_ErrorOccured()
+[Activity
+    Text = ${SendActivity_ErrorOccured_text()}
+]
+
+# SendActivity_ErrorOccured_text()
+- Oops, looks like I'm stuck. Can you try to ask me in a different way?
+- Looks like I'm all mixed up. Let's try asking again, but maybe rephrase your request?
+- Sorry, it looks like something went wrong. Can you please try again?
+
+# SendActivity_DidNotUnderstand()
+[Activity
+    Text = ${SendActivity_DidNotUnderstand_text()}
+]
+
+# SendActivity_DidNotUnderstand_text()
+- Sorry, I didn't get, umm did you say ${user.input}
+- I'm not sure I understand ${user.input}. Can you please try again?
+- Hmm, I don't think I understand ${user.input}. Can you try to ask me in a different way.
+- I didn't get that. Would you mind rephrasing ${user.input} and try it again.
+- I didn't quite understand... ${user.input}
+# LogAction_Text_gujnue()
+[Activity
+    Text = ${LogAction_Text_gujnue_text()}
+]
+
+# LogAction_Text_gujnue_text()
+- ${turn.dialogEvent.value}
+# SendActivity_0oHxGR_text()
+- But in case I do did you mean ${turn.results.content.value[0].description}
+# SendActivity_0oHxGR()
+[Activity
+    Text = ${SendActivity_0oHxGR_text()}
+]
+
+# LogAction_Text_Tfaf1S()
+[Activity
+    Text = ${LogAction_Text_Tfaf1S_text()}
+]
+
+# LogAction_Text_Tfaf1S_text()
+- ${turn.results}

@@ -1,0 +1,130 @@
+{
+  "luis_schema_version": "7.0.0",
+  "intents": [
+    {
+      "name": "_Interruption",
+      "features": []
+    },
+    {
+      "name": "None",
+      "features": []
+    },
+    {
+      "name": "NumberInput_Response_Hz4cWV",
+      "features": []
+    }
+  ],
+  "entities": [
+    {
+      "name": "roomSelected",
+      "children": [],
+      "roles": [],
+      "features": []
+    }
+  ],
+  "hierarchicals": [],
+  "composites": [],
+  "closedLists": [],
+  "prebuiltEntities": [],
+  "utterances": [
+    {
+      "text": "abort",
+      "intent": "_Interruption",
+      "entities": []
+    },
+    {
+      "text": "cancel",
+      "intent": "_Interruption",
+      "entities": []
+    },
+    {
+      "text": "end this now",
+      "intent": "_Interruption",
+      "entities": []
+    },
+    {
+      "text": "exit",
+      "intent": "_Interruption",
+      "entities": []
+    },
+    {
+      "text": "forget about it",
+      "intent": "_Interruption",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "_Interruption",
+      "entities": []
+    },
+    {
+      "text": "how do you work",
+      "intent": "_Interruption",
+      "entities": []
+    },
+    {
+      "text": "i need help",
+      "intent": "_Interruption",
+      "entities": []
+    },
+    {
+      "text": "i need some assistance",
+      "intent": "_Interruption",
+      "entities": []
+    },
+    {
+      "text": "im stuck",
+      "intent": "_Interruption",
+      "entities": []
+    },
+    {
+      "text": "just stop already",
+      "intent": "_Interruption",
+      "entities": []
+    },
+    {
+      "text": "never mind",
+      "intent": "_Interruption",
+      "entities": []
+    },
+    {
+      "text": "quit",
+      "intent": "_Interruption",
+      "entities": []
+    },
+    {
+      "text": "what can you do",
+      "intent": "_Interruption",
+      "entities": []
+    },
+    {
+      "text": "what can you help me with",
+      "intent": "_Interruption",
+      "entities": []
+    }
+  ],
+  "versionId": "0.1",
+  "name": "OwlseyBot(composer)-LuisDialog.en-us.lu",
+  "desc": "Model for OwlseyBot app, targetting composer",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "phraselists": [],
+  "regex_features": [],
+  "patterns": [
+    {
+      "pattern": "video conference room {roomSelected}",
+      "intent": "NumberInput_Response_Hz4cWV"
+    },
+    {
+      "pattern": "room number {roomSelected}",
+      "intent": "NumberInput_Response_Hz4cWV"
+    },
+    {
+      "pattern": "room {roomSelected}",
+      "intent": "NumberInput_Response_Hz4cWV"
+    }
+  ],
+  "settings": []
+}

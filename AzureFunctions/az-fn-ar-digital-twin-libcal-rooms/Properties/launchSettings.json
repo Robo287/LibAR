@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "az_fn_ar_digital_twin_libcal_rooms": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7098",
+      "launchBrowser": false
+    }
+  }
+}

@@ -1,0 +1,453 @@
+fileFormatVersion: 2
+guid: 666a9d20d55a5c648a268f0216e15a0e
+timeCreated: 1468504825
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bone
+    100002: Heard
+    100004: Heard_end
+    100006: Mesh
+    100008: Owl
+    100010: //RootNode
+    100012: Paw_L
+    100014: Paw_L.001
+    100016: Paw_L.002
+    100018: Paw_L.002_end
+    100020: Paw_L.003
+    100022: Paw_L.003_end
+    100024: Paw_R
+    100026: Paw_R.001
+    100028: Paw_R.002
+    100030: Paw_R.002_end
+    100032: Paw_R.003
+    100034: Paw_R.003_end
+    100036: Shoulder_L
+    100038: Shoulder_R
+    100040: Wing_L
+    100042: Wing_L.001
+    100044: Wing_L.001_end
+    100046: Wing_R
+    100048: Wing_R.001
+    100050: Wing_R.001_end
+    100052: Armature
+    400000: Bone
+    400002: Heard
+    400004: Heard_end
+    400006: Mesh
+    400008: Owl
+    400010: //RootNode
+    400012: Paw_L
+    400014: Paw_L.001
+    400016: Paw_L.002
+    400018: Paw_L.002_end
+    400020: Paw_L.003
+    400022: Paw_L.003_end
+    400024: Paw_R
+    400026: Paw_R.001
+    400028: Paw_R.002
+    400030: Paw_R.002_end
+    400032: Paw_R.003
+    400034: Paw_R.003_end
+    400036: Shoulder_L
+    400038: Shoulder_R
+    400040: Wing_L
+    400042: Wing_L.001
+    400044: Wing_L.001_end
+    400046: Wing_R
+    400048: Wing_R.001
+    400050: Wing_R.001_end
+    400052: Armature
+    4300000: Mesh
+    7400000: Owl|ArmatureAction
+    7400002: Armature|ArmatureAction
+    7400004: Idle
+    7400006: ReadyToFly
+    7400008: Fly
+    9500000: //RootNode
+    13700000: Mesh
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|ArmatureAction
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 540
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Heard
+        weight: 1
+      - path: Armature/Bone/Heard/Heard_end
+        weight: 1
+      - path: Armature/Bone/Shoulder_L
+        weight: 1
+      - path: Armature/Bone/Shoulder_L/Wing_L
+        weight: 1
+      - path: Armature/Bone/Shoulder_L/Wing_L/Wing_L.001
+        weight: 1
+      - path: Armature/Bone/Shoulder_L/Wing_L/Wing_L.001/Wing_L.001_end
+        weight: 1
+      - path: Armature/Bone/Shoulder_R
+        weight: 1
+      - path: Armature/Bone/Shoulder_R/Wing_R
+        weight: 1
+      - path: Armature/Bone/Shoulder_R/Wing_R/Wing_R.001
+        weight: 1
+      - path: Armature/Bone/Shoulder_R/Wing_R/Wing_R.001/Wing_R.001_end
+        weight: 1
+      - path: Armature/Paw_L
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001/Paw_L.002
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001/Paw_L.002/Paw_L.002_end
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001/Paw_L.003
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001/Paw_L.003/Paw_L.003_end
+        weight: 1
+      - path: Armature/Paw_R
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001/Paw_R.002
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001/Paw_R.002/Paw_R.002_end
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001/Paw_R.003
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001/Paw_R.003/Paw_R.003_end
+        weight: 1
+      - path: Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Armature|ArmatureAction
+      firstFrame: 2
+      lastFrame: 402
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Heard
+        weight: 1
+      - path: Armature/Bone/Heard/Heard_end
+        weight: 1
+      - path: Armature/Bone/Shoulder_L
+        weight: 1
+      - path: Armature/Bone/Shoulder_L/Wing_L
+        weight: 1
+      - path: Armature/Bone/Shoulder_L/Wing_L/Wing_L.001
+        weight: 1
+      - path: Armature/Bone/Shoulder_L/Wing_L/Wing_L.001/Wing_L.001_end
+        weight: 1
+      - path: Armature/Bone/Shoulder_R
+        weight: 1
+      - path: Armature/Bone/Shoulder_R/Wing_R
+        weight: 1
+      - path: Armature/Bone/Shoulder_R/Wing_R/Wing_R.001
+        weight: 1
+      - path: Armature/Bone/Shoulder_R/Wing_R/Wing_R.001/Wing_R.001_end
+        weight: 1
+      - path: Armature/Paw_L
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001/Paw_L.002
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001/Paw_L.002/Paw_L.002_end
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001/Paw_L.003
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001/Paw_L.003/Paw_L.003_end
+        weight: 1
+      - path: Armature/Paw_R
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001/Paw_R.002
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001/Paw_R.002/Paw_R.002_end
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001/Paw_R.003
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001/Paw_R.003/Paw_R.003_end
+        weight: 1
+      - path: Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ReadyToFly
+      takeName: Armature|ArmatureAction
+      firstFrame: 402
+      lastFrame: 450
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Heard
+        weight: 1
+      - path: Armature/Bone/Heard/Heard_end
+        weight: 1
+      - path: Armature/Bone/Shoulder_L
+        weight: 1
+      - path: Armature/Bone/Shoulder_L/Wing_L
+        weight: 1
+      - path: Armature/Bone/Shoulder_L/Wing_L/Wing_L.001
+        weight: 1
+      - path: Armature/Bone/Shoulder_L/Wing_L/Wing_L.001/Wing_L.001_end
+        weight: 1
+      - path: Armature/Bone/Shoulder_R
+        weight: 1
+      - path: Armature/Bone/Shoulder_R/Wing_R
+        weight: 1
+      - path: Armature/Bone/Shoulder_R/Wing_R/Wing_R.001
+        weight: 1
+      - path: Armature/Bone/Shoulder_R/Wing_R/Wing_R.001/Wing_R.001_end
+        weight: 1
+      - path: Armature/Paw_L
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001/Paw_L.002
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001/Paw_L.002/Paw_L.002_end
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001/Paw_L.003
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001/Paw_L.003/Paw_L.003_end
+        weight: 1
+      - path: Armature/Paw_R
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001/Paw_R.002
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001/Paw_R.002/Paw_R.002_end
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001/Paw_R.003
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001/Paw_R.003/Paw_R.003_end
+        weight: 1
+      - path: Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Fly
+      takeName: Armature|ArmatureAction
+      firstFrame: 450
+      lastFrame: 540
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Heard
+        weight: 1
+      - path: Armature/Bone/Heard/Heard_end
+        weight: 1
+      - path: Armature/Bone/Shoulder_L
+        weight: 1
+      - path: Armature/Bone/Shoulder_L/Wing_L
+        weight: 1
+      - path: Armature/Bone/Shoulder_L/Wing_L/Wing_L.001
+        weight: 1
+      - path: Armature/Bone/Shoulder_L/Wing_L/Wing_L.001/Wing_L.001_end
+        weight: 1
+      - path: Armature/Bone/Shoulder_R
+        weight: 1
+      - path: Armature/Bone/Shoulder_R/Wing_R
+        weight: 1
+      - path: Armature/Bone/Shoulder_R/Wing_R/Wing_R.001
+        weight: 1
+      - path: Armature/Bone/Shoulder_R/Wing_R/Wing_R.001/Wing_R.001_end
+        weight: 1
+      - path: Armature/Paw_L
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001/Paw_L.002
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001/Paw_L.002/Paw_L.002_end
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001/Paw_L.003
+        weight: 1
+      - path: Armature/Paw_L/Paw_L.001/Paw_L.003/Paw_L.003_end
+        weight: 1
+      - path: Armature/Paw_R
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001/Paw_R.002
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001/Paw_R.002/Paw_R.002_end
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001/Paw_R.003
+        weight: 1
+      - path: Armature/Paw_R/Paw_R.001/Paw_R.003/Paw_R.003_end
+        weight: 1
+      - path: Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

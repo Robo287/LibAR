@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.MultiLanguageRecognizer",
+  "id": "LUIS_OwlseyBot",
+  "recognizers": {
+    "en-us": "OwlseyBot.en-us.lu",
+    "": "OwlseyBot.en-us.lu"
+  }
+}

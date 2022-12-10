@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Main.unity
+    guid: e399ac5e10fe2f746b96609c6c56a44f
+  - enabled: 1
+    path: Assets/Scenes/LibAR.unity
+    guid: 166886871f4c43148b3eee66563091e1
+  - enabled: 1
+    path: Assets/Scenes/StudentUX.unity
+    guid: e3207faa13cfdcb48922e6e101fa731d
+  - enabled: 1
+    path: Assets/Scenes/StaffUX.unity
+    guid: 720f88a08ae2c3749b9a7536bf92e302
+  - enabled: 0
+    path: Assets/Scenes/Book a Room.unity
+    guid: 802e8701c31aee348a2b3edc20ea6123
+  - enabled: 1
+    path: Assets/Scenes/Book Video Conference Room.unity
+    guid: 226d5e19ef9884442befe44022a69e83
+  - enabled: 1
+    path: Assets/Scenes/IT-Dashboard.unity
+    guid: 55eca35ac845e804caca1477233ccc40
+  - enabled: 1
+    path: Assets/Scenes/HelpUX.unity
+    guid: 978734274ce9162469ad32b86ce73775
+  - enabled: 1
+    path: Assets/Scenes/GetDirectionsUX.unity
+    guid: 2338edb3d62e92e4d848383ba99ba1ab
+  - enabled: 1
+    path: Assets/Scenes/FindBookUX.unity
+    guid: e1db2a19351e344488d6e4c81666523d
+  - enabled: 1
+    path: Assets/Scenes/Directions.unity
+    guid: 825f1d663101e0749a11dd8c16afd250
+  - enabled: 1
+    path: Assets/Scenes/AboutUX.unity
+    guid: 7df199ed537820a40943204c4d1af9ca
+  - enabled: 1
+    path: Assets/Scenes/ScrollingCredits.unity
+    guid: 9c29a5bcaa1e5094ca8e01d1af3b43eb
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 4b757e175b08b394299663f7466cf692, type: 2}
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: cd9ad442a3808e34f996abfbad309134, type: 2}
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 297150313c323f74a838afc38c66edd9, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ed97ad42f1a5be54eb7ced7dd507c64f, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 884c3463e802bbf41b721922c4bdcfb8, type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: c1a77cf2b18bcb041a1ef0fb02899b33, type: 2}

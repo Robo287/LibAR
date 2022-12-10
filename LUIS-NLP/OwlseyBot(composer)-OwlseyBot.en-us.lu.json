@@ -1,0 +1,249 @@
+{
+  "luis_schema_version": "7.0.0",
+  "intents": [
+    {
+      "name": "Cancel",
+      "features": []
+    },
+    {
+      "name": "Help",
+      "features": []
+    },
+    {
+      "name": "LuisBase",
+      "features": []
+    },
+    {
+      "name": "None",
+      "features": []
+    }
+  ],
+  "entities": [],
+  "hierarchicals": [],
+  "composites": [],
+  "closedLists": [],
+  "prebuiltEntities": [],
+  "utterances": [
+    {
+      "text": "abort",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "book",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "cancel",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "check my account balance",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "conference room",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "do unicorns really exist",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "do you carry",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "do you have",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "duck",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "end this now",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "exit",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "find a book",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "forget about it",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "get directions",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "how do i get to",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "how do you work",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "i need help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "i need some assistance",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "i want to order a pizza",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i'd like to reserve a room",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "i'd like to reserve a study room",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "im stuck",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "is a room available",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "is it going to rain?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "just stop already",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "librarian",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "looking for",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "never mind",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "place an item on hold",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "quit",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "room",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "search",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "staff",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "study room",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "turn on the lights",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "video conference",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "what can you do",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "what can you help me with",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "where can i find",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "where is",
+      "intent": "LuisBase",
+      "entities": []
+    },
+    {
+      "text": "where is my car?",
+      "intent": "None",
+      "entities": []
+    }
+  ],
+  "versionId": "0.9",
+  "name": "OwlseyBot(composer)-OwlseyBot.en-us.lu",
+  "desc": "Model for OwlseyBot app, targetting composer",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "phraselists": [],
+  "regex_features": [],
+  "patterns": [],
+  "settings": []
+}

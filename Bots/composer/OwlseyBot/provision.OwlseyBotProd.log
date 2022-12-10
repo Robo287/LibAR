@@ -1,0 +1,20 @@
+{
+  "profileName": "OwlseyBotProd",
+  "jobId": "193d84ee-f966-4ac2-8ee2-1e00f11cd2c0",
+  "projectId": "53441.72989711575",
+  "time": "2022-09-11T19:00:54.437Z",
+  "log": [
+    "Creating Azure resources...",
+    "Checking the Existence of the Resource Group ...",
+    "Use the Resource Group: FAU-AR-digitaltwin at eastus2",
+    "> Creating App Registration ...",
+    "Start to add password for App, Id : 0fdfbed4-d200-42f1-829a-44394a65e2c6",
+    "> Create App Registration Success! ID: 0fdfbed4-d200-42f1-829a-44394a65e2c6",
+    "Deploying Azure Functions Resource ...",
+    "Deploying Azure Functions Success",
+    "Deploying Bot Resource ...",
+    "Deploying Luis Authoring Resource ...",
+    "Deploying Luis Resource ...",
+    "Provisioning completed successfully!"
+  ]
+}

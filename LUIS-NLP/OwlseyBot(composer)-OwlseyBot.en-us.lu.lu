@@ -1,0 +1,80 @@
+
+> LUIS application information
+> !# @app.name = OwlseyBot(composer)-OwlseyBot.en-us.lu
+> !# @app.desc = Model for OwlseyBot app, targetting composer
+> !# @app.versionId = 0.9
+> !# @app.culture = en-us
+> !# @app.luis_schema_version = 7.0.0
+> !# @app.tokenizerVersion = 1.0.0
+
+
+> # Intent definitions
+
+# Cancel
+- abort
+- cancel
+- end this now
+- exit
+- forget about it
+- just stop already
+- never mind
+- quit
+
+
+# Help
+- help
+- how do you work
+- i need help
+- i need some assistance
+- im stuck
+- what can you do
+- what can you help me with
+
+
+# LuisBase
+- book
+- conference room
+- do you carry
+- do you have
+- find a book
+- get directions
+- how do i get to
+- i'd like to reserve a room
+- i'd like to reserve a study room
+- is a room available
+- librarian
+- looking for
+- room
+- search
+- staff
+- study room
+- video conference
+- where can i find
+- where is
+
+
+# None
+- check my account balance
+- do unicorns really exist
+- duck
+- i want to order a pizza
+- is it going to rain?
+- place an item on hold
+- turn on the lights
+- where is my car?
+
+
+> # Entity definitions
+
+
+> # PREBUILT Entity definitions
+
+
+> # Phrase list definitions
+
+
+> # List entities
+
+> # RegEx entities
+
+

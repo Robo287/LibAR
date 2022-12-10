@@ -1,0 +1,2795 @@
+{
+  "luis_schema_version": "7.0.0",
+  "intents": [
+    {
+      "name": "AskForHelp",
+      "features": []
+    },
+    {
+      "name": "FindBook",
+      "features": [
+        {
+          "modelName": "FindBookAuthor",
+          "isRequired": false
+        },
+        {
+          "modelName": "FindBookSubject",
+          "isRequired": false
+        },
+        {
+          "modelName": "FindBookTitle",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "GetDirections",
+      "features": []
+    },
+    {
+      "name": "IsBookAvailable",
+      "features": []
+    },
+    {
+      "name": "None",
+      "features": []
+    },
+    {
+      "name": "ReserveStudyRoom",
+      "features": []
+    }
+  ],
+  "entities": [
+    {
+      "name": "FindBookAuthor",
+      "children": [],
+      "roles": [],
+      "features": []
+    },
+    {
+      "name": "FindBookSubject",
+      "children": [],
+      "roles": [],
+      "features": []
+    },
+    {
+      "name": "FindBookTitle",
+      "children": [],
+      "roles": [],
+      "features": []
+    },
+    {
+      "name": "StudyRoom",
+      "children": [],
+      "roles": [],
+      "features": []
+    }
+  ],
+  "hierarchicals": [],
+  "composites": [],
+  "closedLists": [],
+  "prebuiltEntities": [],
+  "utterances": [
+    {
+      "text": "3 easy steps.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "a little assistance please",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "a little help here",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "alright",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "alright let's try it one more time",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "and",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "and there you go",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "ansaarnee",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "are there any rooms available?",
+      "intent": "ReserveStudyRoom",
+      "entities": []
+    },
+    {
+      "text": "are there any study rooms available?",
+      "intent": "ReserveStudyRoom",
+      "entities": []
+    },
+    {
+      "text": "are there rooms available?",
+      "intent": "ReserveStudyRoom",
+      "entities": []
+    },
+    {
+      "text": "assistance",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "ayudame",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "blue soda has no oil.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "bye bye",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "campus and assistance",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "can anybody help me is there anybody out there that can help",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "can i book a conference room?",
+      "intent": "ReserveStudyRoom",
+      "entities": []
+    },
+    {
+      "text": "can i find books on the subject of dying hair?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 35,
+          "endPos": 44,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "can i get some assistance",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "can i get some assistance please",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "can i get some help please",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "can i reserve a conference room?",
+      "intent": "ReserveStudyRoom",
+      "entities": []
+    },
+    {
+      "text": "can i reserve a study room?",
+      "intent": "ReserveStudyRoom",
+      "entities": []
+    },
+    {
+      "text": "can someone help me please",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "can you body help me",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "can you draw a map of where the book called year 2000 and what to expect is?",
+      "intent": "GetDirections",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 44,
+          "endPos": 71,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "can you find a book by john adams",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 23,
+          "endPos": 32,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "can you find a book on basketball",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 23,
+          "endPos": 32,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "can you find a book on basketball by williams",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "can you find a book on cups",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 23,
+          "endPos": 26,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "can you find a book on math",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 23,
+          "endPos": 26,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "can you find a book on math by john adams",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "can you find a book on physics",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 23,
+          "endPos": 29,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "can you find a book on science by dwight",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 23,
+          "endPos": 29,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 34,
+          "endPos": 39,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "can you find me a book on cooking",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 32,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "can you find me a book on cooking?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 32,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "can you find the book on basketball by williams",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "can you help me",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "can you help me i'm looking for a book on science",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 42,
+          "endPos": 48,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "can you show me where the book entitled sex sex and more sex is?",
+      "intent": "GetDirections",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 40,
+          "endPos": 59,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "can you take me to where this book is?",
+      "intent": "GetDirections",
+      "entities": []
+    },
+    {
+      "text": "carrying a book",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "click for voice command",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "did you know about tommy acree",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 19,
+          "endPos": 29,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "display the directions to the book named blue ridge.",
+      "intent": "GetDirections",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 41,
+          "endPos": 50,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do it again",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "do we have a book called a practical guide to the galaxy by john gilmore",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 25,
+          "endPos": 55,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you carry a book on math by thompson",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 23,
+          "endPos": 26,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 31,
+          "endPos": 38,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you carry a book on philosophy",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 23,
+          "endPos": 32,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you carry a book on science",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 23,
+          "endPos": 29,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you carry a book on stamps by anthony",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 23,
+          "endPos": 28,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you carry a book on wrestling by anthony r.",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 23,
+          "endPos": 31,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you carry any books on math by rawan?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 29,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 34,
+          "endPos": 38,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you carry any books on tennis",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 31,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you carry pillows?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "do you carry the book called the year 2000 and what to expect",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 29,
+          "endPos": 60,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you currently have on premise the book titled lord of the rings by j.r.r. tolkien",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 49,
+          "endPos": 65,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 70,
+          "endPos": 83,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you guys have actual facts here?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 17,
+          "endPos": 28,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "do you have a book by dwight",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 22,
+          "endPos": 27,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book by the author frankie berverly?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 33,
+          "endPos": 48,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book called a practical guide to the galaxy by john gilmore",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 28,
+          "endPos": 56,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book called fire pit and george daniels?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 26,
+          "endPos": 52,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book called the year 200 and what to expect?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 26,
+          "endPos": 56,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book on basketball",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 31,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book on candy by williams",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 26,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book on cooking?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 28,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book on economics by enzo",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "do you have a book on exodus",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 27,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book on flipping coins by j rogers",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 35,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 40,
+          "endPos": 47,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book on mary c robbins by george lucas",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 25,
+          "children": []
+        },
+        {
+          "entity": "FindBookSubject",
+          "startPos": 27,
+          "endPos": 35,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 40,
+          "endPos": 51,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book on math",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 25,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book on math by dwight",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 25,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 30,
+          "endPos": 35,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book on math by enzo",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 30,
+          "endPos": 33,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book on math by james williams",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 25,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 30,
+          "endPos": 43,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book on math by thompson",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 25,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 30,
+          "endPos": 37,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book on physics by anthony",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 28,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 33,
+          "endPos": 39,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book on physics by goins?",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "do you have a book on physics by shavani",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 28,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 33,
+          "endPos": 39,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book on physics by shivani",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 28,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 33,
+          "endPos": 39,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book on science",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 28,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a book play dough by jim billy",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 19,
+          "endPos": 28,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a practical guide to the galaxy by fillmore john",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 12,
+          "endPos": 42,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 47,
+          "endPos": 59,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a practical guide to the galaxy by john fillmore",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 14,
+          "endPos": 42,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have a room?",
+      "intent": "ReserveStudyRoom",
+      "entities": []
+    },
+    {
+      "text": "do you have an open conference room available now?",
+      "intent": "ReserveStudyRoom",
+      "entities": []
+    },
+    {
+      "text": "do you have any books on physics by shivani?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 25,
+          "endPos": 31,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 36,
+          "endPos": 42,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have any books written by adrianne artis?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 33,
+          "endPos": 46,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have any tennis shoes",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "do you have any video conference rooms?",
+      "intent": "ReserveStudyRoom",
+      "entities": []
+    },
+    {
+      "text": "do you have the book named catcher in the rye by j.d. salinger available?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 27,
+          "endPos": 44,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 49,
+          "endPos": 61,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "do you have the book on physics by shivani?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 24,
+          "endPos": 30,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 35,
+          "endPos": 41,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "find a book",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "find a book about physics",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 18,
+          "endPos": 24,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "find a book by john adams",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 15,
+          "endPos": 24,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "find a book called go here by jim wicker",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "find a book called the dancing horse by billy ray",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 19,
+          "endPos": 35,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 40,
+          "endPos": 48,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "find a book called the knights evening by tom rivers",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 19,
+          "endPos": 37,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 42,
+          "endPos": 51,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "find a book on butterflies",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 15,
+          "endPos": 25,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "find a book on football",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 15,
+          "endPos": 22,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "find a book on football by ja rogers",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 15,
+          "endPos": 22,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 27,
+          "endPos": 35,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "find a book on jumping",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 15,
+          "endPos": 21,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "find a book on math",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 15,
+          "endPos": 18,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "find a book on math by anthony",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 15,
+          "endPos": 18,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 23,
+          "endPos": 29,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "find a book on microphones",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "find a book on physics by ja rogers",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "find a book on science",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 15,
+          "endPos": 21,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "find a book on shopping",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "find a book on spiders by m thompson",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "find book",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "find books by chichi adams",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "find me a book called documenter games",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 22,
+          "endPos": 37,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "find me a book called the hunger games",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 22,
+          "endPos": 37,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "find me a book on roses",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 18,
+          "endPos": 22,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "find the book called go shopping by billy thornton",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 21,
+          "endPos": 31,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 36,
+          "endPos": 49,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "find the book called go shpping by billy thorton",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 21,
+          "endPos": 30,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 35,
+          "endPos": 47,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "find the book titled on time by derek thompson",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 21,
+          "endPos": 27,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 32,
+          "endPos": 45,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "football",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "for you",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "funny book called the hunger games",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 0,
+          "endPos": 4,
+          "children": []
+        },
+        {
+          "entity": "FindBookTitle",
+          "startPos": 18,
+          "endPos": 33,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "good",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hand with fingers",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "have you met tyron louis",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 13,
+          "endPos": 23,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "hello",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hello again",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hello do you have a book on math by dwight",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 28,
+          "endPos": 31,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 36,
+          "endPos": 41,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "hello i'm looking for a book on candy",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 32,
+          "endPos": 36,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "hello i'm looking for a book on math",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 32,
+          "endPos": 35,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "hello i'm looking for a book on science",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 32,
+          "endPos": 38,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "hello, is anyone there?",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "help me",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hi can you find a book on stamps",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 31,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "hi do you carry a book on cooking?",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "hi i'm looking for a book on basketball by williams",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "hi i'm looking for a book on cooking",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 29,
+          "endPos": 35,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "hi i'm looking for a book on science",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 29,
+          "endPos": 35,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "how are you",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how do i get to room 1?",
+      "intent": "GetDirections",
+      "entities": [
+        {
+          "entity": "StudyRoom",
+          "startPos": 16,
+          "endPos": 21,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "how do i get to the caffee from here?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i can't find the book series actual facts by dr. york do you have it here?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 29,
+          "endPos": 40,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 45,
+          "endPos": 52,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i didn't get that",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "i have the buttons gotta go",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i like a book on basketball",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 17,
+          "endPos": 26,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i need a book",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "i need a book by janet overton on the us legal system do you have that?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 17,
+          "endPos": 29,
+          "children": []
+        },
+        {
+          "entity": "FindBookSubject",
+          "startPos": 38,
+          "endPos": 52,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i need a book called an introduction to statistical learning do you have it?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 21,
+          "endPos": 59,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i need a book on physics",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 17,
+          "endPos": 23,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i need a little help now",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "i need assistance",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "i need hellp",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "i need some assistance",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "i need some help",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "i need some help finding dr york's books",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 25,
+          "endPos": 33,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'd like a book about sex",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 24,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'd like to reserve a study room",
+      "intent": "ReserveStudyRoom",
+      "entities": []
+    },
+    {
+      "text": "i'm looking for a book",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "i'm looking for a book about tennis",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "i'm looking for a book about tennis shoes",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 29,
+          "endPos": 40,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a book on basketball by williams",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "i'm looking for a book on candy",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 30,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a book on chemistry",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 34,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a book on chemistry by bill",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 34,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 39,
+          "endPos": 42,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a book on chemistry by thompson",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 34,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 39,
+          "endPos": 46,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a book on math by dwight",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 29,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 34,
+          "endPos": 39,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a book on math by enzo",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 34,
+          "endPos": 37,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a book on physics by",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 32,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a book on physics by anthony",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 32,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 37,
+          "endPos": 43,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a book on physics by rawan",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 32,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 37,
+          "endPos": 41,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a book on physics by shibani",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 32,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 37,
+          "endPos": 43,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a book on physics by shivani",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 32,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 37,
+          "endPos": 43,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a book on physics by thompson",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 32,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 37,
+          "endPos": 44,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a book on science",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 32,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a book on skittles",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 33,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a book on sports by goins",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "i'm looking for a book on stamps",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 31,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a book on stamps do you have any",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 31,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a book that deals with chemistry",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 39,
+          "endPos": 47,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a book with math in it",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 28,
+          "endPos": 31,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a brooklyn science",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "i'm looking for a full conscience",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 16,
+          "endPos": 32,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a math book by rawan",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 18,
+          "endPos": 21,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 31,
+          "endPos": 35,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for a math book by rawan.",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 18,
+          "endPos": 21,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 31,
+          "endPos": 35,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for actual facts series by dr malachi z. york",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 16,
+          "endPos": 34,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 39,
+          "endPos": 56,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for brooklyn science",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 16,
+          "endPos": 31,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i'm looking in a book on basketball by williams",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "if we do",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "is anybody there",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "is anyone there",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "is anyone there?",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "is that something out there",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "is the book called the year 2000 and what to expect by york available?",
+      "intent": "IsBookAvailable",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 19,
+          "endPos": 50,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 55,
+          "endPos": 58,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "is the book named let's talk about the end checked out?",
+      "intent": "IsBookAvailable",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 18,
+          "endPos": 41,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "is the book titled gone with the wind available?",
+      "intent": "IsBookAvailable",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 19,
+          "endPos": 36,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "is the book titled pinocchio by carlo collodi available?",
+      "intent": "IsBookAvailable",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 19,
+          "endPos": 27,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 32,
+          "endPos": 44,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "is the book titled the hunger games by author suzanne collins available?",
+      "intent": "IsBookAvailable",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 19,
+          "endPos": 34,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 46,
+          "endPos": 60,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "is the book titled the lion, the witch and the wardrobe by c.s. lewis checked out?",
+      "intent": "IsBookAvailable",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 19,
+          "endPos": 54,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 59,
+          "endPos": 68,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "is there a conference room available?",
+      "intent": "ReserveStudyRoom",
+      "entities": []
+    },
+    {
+      "text": "log out",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "looking for a book on stamps by enzo",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 27,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 32,
+          "endPos": 35,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "maps and assistance",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "may i have some help",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "may i have some help please",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "may i have some help please help",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "maybe",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "oh cool",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "oh nothing",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "ok",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "ok do you have any books",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "ok i'm looking for a book on physics",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 29,
+          "endPos": 35,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "ok i'm looking for some books",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "ok then",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "people call me",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "play",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "please a little assistance",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "please find a book by m rogers",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "please find a book on baseball by mmm dripple",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "please find a book on baseball by va rogers",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "please find a book on basketball by dribble",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 31,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "please find a book on basketball by m rogers",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "please find a book on football by mr rogers",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "please find a book on psychology by williams",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "please find a book on sports by m rogers",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 27,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 32,
+          "endPos": 39,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "please find a book on sychology by williams",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 30,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 35,
+          "endPos": 42,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "please find a book on weightlifting by m pooters",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 22,
+          "endPos": 34,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 39,
+          "endPos": 47,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "please find an old book by m rogers",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "please find another book by emma rogers",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "please find another book by m rogers",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "please help",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "please help i'm looking for a book on science",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 38,
+          "endPos": 44,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "please help me",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "please stop",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "please tell me",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "search for a book on tigers",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 21,
+          "endPos": 26,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "search for all books by rawan alhindi",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 24,
+          "endPos": 36,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "search for book named dark horses by day written by shivani nanan",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 22,
+          "endPos": 39,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 52,
+          "endPos": 64,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "show me how do i find the book titled doe god exist.",
+      "intent": "GetDirections",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 38,
+          "endPos": 50,
+          "children": []
+        },
+        {
+          "entity": "FindBookTitle",
+          "startPos": 51,
+          "endPos": 51,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "show me how to get to the book called 50 shades of gray",
+      "intent": "GetDirections",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 38,
+          "endPos": 54,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "sorry i didn't get that",
+      "intent": "AskForHelp",
+      "entities": []
+    },
+    {
+      "text": "subject title",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "test 123 test test 1",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "testing",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "thank you",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "that really hurt try going slower next time",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "the younger sister of blank panther is called shuri",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "try again",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "us navy",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "we have to also showcase",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "well hello",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what about something on",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what books do you have",
+      "intent": "FindBook",
+      "entities": []
+    },
+    {
+      "text": "what books do you have by dwight goins",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 26,
+          "endPos": 37,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "what happen",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what is science all about?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 8,
+          "endPos": 14,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "what room is dr. millard's?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 13,
+          "endPos": 25,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "what time is it?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "where are the books on flying cars?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 23,
+          "endPos": 33,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "where can i find a book on how to make guns",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 27,
+          "endPos": 42,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "where can i find books on child birth",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 36,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "where can i find the book named little miss riding by harper foley",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 32,
+          "endPos": 49,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 54,
+          "endPos": 65,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "where can i get a quick bite to eat?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "where can i locate the study room?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "where did you come from",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "where is it located?",
+      "intent": "GetDirections",
+      "entities": []
+    },
+    {
+      "text": "where is the book located?",
+      "intent": "GetDirections",
+      "entities": []
+    },
+    {
+      "text": "where is the book titled gone with the wind?",
+      "intent": "GetDirections",
+      "entities": [
+        {
+          "entity": "FindBookTitle",
+          "startPos": 25,
+          "endPos": 42,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "where is the math section of books located?",
+      "intent": "GetDirections",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 13,
+          "endPos": 16,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "where is the physics department?",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 13,
+          "endPos": 19,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "where is the science section of books located at?",
+      "intent": "GetDirections",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 13,
+          "endPos": 19,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "where would i find books on programming computers",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 28,
+          "endPos": 48,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "which way do i go to get to room 2?",
+      "intent": "GetDirections",
+      "entities": [
+        {
+          "entity": "StudyRoom",
+          "startPos": 28,
+          "endPos": 34,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "which way is up?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "why",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "why not me",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "yeah",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "yes do you have a book on math by dwight",
+      "intent": "FindBook",
+      "entities": [
+        {
+          "entity": "FindBookSubject",
+          "startPos": 26,
+          "endPos": 29,
+          "children": []
+        },
+        {
+          "entity": "FindBookAuthor",
+          "startPos": 34,
+          "endPos": 39,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "you go",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "you have reached the",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "you would find for you",
+      "intent": "None",
+      "entities": []
+    }
+  ],
+  "versionId": "0.1",
+  "name": "LibAR",
+  "desc": "FAU Library Augmented Reality Digital Twin experience",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "phraselists": [],
+  "regex_features": [],
+  "patterns": [],
+  "settings": [
+    {
+      "name": "NormalizePunctuation",
+      "value": "true"
+    }
+  ]
+}

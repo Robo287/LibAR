@@ -1,0 +1,420 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "ad3jls",
+    "name": "LuisDialog",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "mcAWjb"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "bMBTkk"
+          },
+          "property": "user.input",
+          "value": "=turn.activity.text"
+        },
+        {
+          "$kind": "Microsoft.HttpRequest",
+          "$designer": {
+            "id": "tFYwbd"
+          },
+          "method": "GET",
+          "url": "https://luis-ar-digitaltwin.cognitiveservices.azure.com/luis/prediction/v3.0/apps/9b2aacef-5d66-4d41-9020-fd2ae913bcbc/slots/production/predict?verbose=true&show-all-intents=false&log=true&subscription-key=a7b1e7c6695d44419fde64aadb442ba5&query=${user.input}",
+          "resultProperty": "dialog.api_results"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "7SX8K4"
+          },
+          "condition": "=dialog.api_results.statusCode == 200",
+          "actions": [
+            {
+              "$kind": "Microsoft.SetProperties",
+              "$designer": {
+                "id": "w88F1w"
+              },
+              "assignments": [
+                {
+                  "property": "dialog.topIntent",
+                  "value": "=dialog.api_results.content.prediction.topIntent"
+                },
+                {
+                  "property": "dialog.findBookAuthor",
+                  "value": "=dialog.api_results.content.prediction.entities.FindBookAuthor[0]"
+                },
+                {
+                  "property": "dialog.findBookSubject",
+                  "value": "=dialog.api_results.content.prediction.entities.FindBookSubject[0]"
+                },
+                {
+                  "property": "dialog.findBookTitle",
+                  "value": "=dialog.api_results.content.prediction.entities.FindBookTitle[0]"
+                },
+                {
+                  "property": "dialog.studyRoom",
+                  "value": "=dialog.api_results.content.prediction.entities.StudyRoom[0]"
+                },
+                {
+                  "property": "dialog.getDirectionsDeviceName",
+                  "value": "=dialog.api_results.content.prediction.entities.GetDirectionsDeviceName[0]"
+                },
+                {
+                  "property": "dialog.showTicketInfoTicketNumber",
+                  "value": "=dialog.api_results.content.prediction.entities.ShowTicketInfoTicketNumber[0]"
+                },
+                {
+                  "property": "dialog.showTickInfoTicketStatus",
+                  "value": "=dialog.api_results.content.prediction.entities.ShowTickInfoTicketStatus[0]"
+                }
+              ]
+            },
+            {
+              "$kind": "Microsoft.SwitchCondition",
+              "$designer": {
+                "id": "GMi42f"
+              },
+              "cases": [
+                {
+                  "value": "AskForHelp",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.BeginDialog",
+                      "$designer": {
+                        "id": "1qmZGL"
+                      },
+                      "activityProcessed": true,
+                      "dialog": "HelpDialog"
+                    }
+                  ]
+                },
+                {
+                  "value": "FindBook",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.IfCondition",
+                      "$designer": {
+                        "id": "BsycTw"
+                      },
+                      "actions": [],
+                      "condition": "=dialog.findBookTitle != null",
+                      "elseActions": [
+                        {
+                          "$kind": "Microsoft.TextInput",
+                          "$designer": {
+                            "id": "lw3nvX"
+                          },
+                          "disabled": false,
+                          "maxTurnCount": 3,
+                          "alwaysPrompt": false,
+                          "allowInterruptions": true,
+                          "prompt": "${TextInput_Prompt_lw3nvX()}",
+                          "unrecognizedPrompt": "",
+                          "invalidPrompt": "",
+                          "property": "dialog.findBookTitle"
+                        }
+                      ]
+                    },
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "qGfXWU",
+                        "comment": ""
+                      },
+                      "activity": "${SendActivity_qGfXWU()}"
+                    },
+                    {
+                      "$kind": "Microsoft.SetProperty",
+                      "$designer": {
+                        "id": "0nCk6m"
+                      },
+                      "property": "turn.result",
+                      "value": "=dialog.topIntent+\"-\"+dialog.findBookAuthor+\"-\"+dialog.findBookSubject"
+                    }
+                  ]
+                },
+                {
+                  "value": "IsBookAvailable",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "DySKDE",
+                        "comment": ""
+                      },
+                      "activity": "${SendActivity_DySKDE()}"
+                    },
+                    {
+                      "$kind": "Microsoft.SetProperty",
+                      "$designer": {
+                        "id": "uwsF7T"
+                      },
+                      "property": "turn.result",
+                      "value": "=dialog.topIntent+\"-\"+dialog.findBookAuthor+\"-\"+dialog.findBookSubject"
+                    }
+                  ]
+                },
+                {
+                  "value": "ReserveStudyRoom",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SetProperty",
+                      "$designer": {
+                        "id": "rGq0EW"
+                      },
+                      "property": "user.libCalUrl",
+                      "value": "https://faulib.libcal.com/1.1/space/item/"
+                    },
+                    {
+                      "$kind": "Microsoft.ChoiceInput",
+                      "$designer": {
+                        "id": "SlhnWC"
+                      },
+                      "defaultLocale": "en-us",
+                      "disabled": false,
+                      "maxTurnCount": 3,
+                      "alwaysPrompt": false,
+                      "allowInterruptions": false,
+                      "prompt": "${ChoiceInput_Prompt_SlhnWC()}",
+                      "unrecognizedPrompt": "",
+                      "invalidPrompt": "",
+                      "defaultValueResponse": "",
+                      "choiceOptions": {
+                        "includeNumbers": true,
+                        "inlineOrMore": ", or ",
+                        "inlineOr": " or ",
+                        "inlineSeparator": ", "
+                      },
+                      "property": "user.roomSelected",
+                      "choices": [
+                        "1",
+                        "2"
+                      ]
+                    },
+                    {
+                      "$kind": "Microsoft.NumberInput",
+                      "$designer": {
+                        "id": "VIsJLh",
+                        "comment": ""
+                      },
+                      "defaultLocale": "en-us",
+                      "disabled": false,
+                      "maxTurnCount": 3,
+                      "alwaysPrompt": false,
+                      "allowInterruptions": false,
+                      "prompt": "${NumberInput_Prompt_VIsJLh()}",
+                      "unrecognizedPrompt": "",
+                      "invalidPrompt": "",
+                      "defaultValueResponse": "",
+                      "property": "dialog.reserveMinutes"
+                    },
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "QA4QHB"
+                      },
+                      "activity": "${SendActivity_QA4QHB()}"
+                    },
+                    {
+                      "$kind": "Microsoft.HttpRequest",
+                      "$designer": {
+                        "id": "QtHvUO"
+                      },
+                      "resultProperty": "dialog.availableRoomResults",
+                      "method": "GET",
+                      "url": "https://az-fn-ar-digital-twin-libcal-rooms.azurewebsites.net/api/GetAvailableRooms?room=${user.roomSelected}&howlong=${dialog.reserveMinutes}&when=",
+                      "responseType": "json"
+                    },
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "Qx3pYX"
+                      },
+                      "activity": "${SendActivity_Qx3pYX()}"
+                    }
+                  ]
+                },
+                {
+                  "value": "GetDirections",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.IfCondition",
+                      "$designer": {
+                        "id": "BoR4Mu"
+                      },
+                      "actions": [],
+                      "condition": "=dialog.findBookTitle != null",
+                      "elseActions": [
+                        {
+                          "$kind": "Microsoft.TextInput",
+                          "$designer": {
+                            "id": "2LNUE3"
+                          },
+                          "disabled": false,
+                          "maxTurnCount": 3,
+                          "alwaysPrompt": false,
+                          "allowInterruptions": true,
+                          "prompt": "${TextInput_Prompt_2LNUE3()}",
+                          "unrecognizedPrompt": "",
+                          "invalidPrompt": "",
+                          "property": "dialog.findBookTitle"
+                        }
+                      ]
+                    },
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "cwjPFI",
+                        "comment": ""
+                      },
+                      "activity": "${SendActivity_cwjPFI()}"
+                    },
+                    {
+                      "$kind": "Microsoft.SetProperty",
+                      "$designer": {
+                        "id": "Qm9vsC"
+                      },
+                      "property": "turn.result",
+                      "value": "=dialog.topIntent+\"-\"+dialog.findBookAuthor+\"-\"+dialog.findBookSubject"
+                    }
+                  ]
+                },
+                {
+                  "value": "ShowTicketInfo",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "Fc0w2b"
+                      },
+                      "activity": "${SendActivity_Fc0w2b()}"
+                    }
+                  ]
+                },
+                {
+                  "value": "UpdateTicketInfo",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "6TFils"
+                      },
+                      "activity": "${SendActivity_6TFils()}"
+                    }
+                  ]
+                }
+              ],
+              "default": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "74ODcQ",
+                    "comment": ""
+                  },
+                  "activity": "${SendActivity_74ODcQ()}"
+                },
+                {
+                  "$kind": "Microsoft.HttpRequest",
+                  "$designer": {
+                    "id": "N57IG6"
+                  },
+                  "resultProperty": "turn.results",
+                  "url": "https://api.bing.microsoft.com/v7.0/news/search?q=${user.input}",
+                  "headers": {
+                    "Ocp-Apim-Subscription-Key": "a7dde723aeb146fe8c801b0a1fb31beb"
+                  },
+                  "method": "GET",
+                  "responseType": "json"
+                },
+                {
+                  "$kind": "Microsoft.IfCondition",
+                  "$designer": {
+                    "id": "MRARGY"
+                  },
+                  "condition": "=turn.results.statusCode == 200",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "RsJsIl"
+                      },
+                      "activity": "${SendActivity_RsJsIl()}"
+                    }
+                  ]
+                }
+              ],
+              "condition": "dialog.topIntent"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "RcqN0A"
+              },
+              "activity": "${SendActivity_RcqN0A()}"
+            },
+            {
+              "$kind": "Microsoft.ConfirmInput",
+              "$designer": {
+                "id": "lhqRb2"
+              },
+              "defaultLocale": "en-us",
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${ConfirmInput_Prompt_lhqRb2()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "choiceOptions": {
+                "includeNumbers": true,
+                "inlineOrMore": ", or "
+              },
+              "property": "user.confirm"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "5KOcIU"
+              },
+              "condition": "=user.confirm == 'yes'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.ReplaceDialog",
+                  "$designer": {
+                    "id": "0Ans0C"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "WelcomeDialog"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.EndDialog",
+                  "$designer": {
+                    "id": "ooLjcw"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "LuisDialog.lg",
+  "recognizer": "LuisDialog.lu.qna",
+  "id": "LuisDialog"
+}

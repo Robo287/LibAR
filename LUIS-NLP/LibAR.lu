@@ -1,0 +1,336 @@
+
+> LUIS application information
+> !# @app.name = LibAR
+> !# @app.desc = FAU Library Augmented Reality Digital Twin experience
+> !# @app.versionId = 0.1
+> !# @app.culture = en-us
+> !# @app.luis_schema_version = 7.0.0
+> !# @app.settings.NormalizePunctuation = true
+> !# @app.tokenizerVersion = 1.0.0
+
+
+> # Intent definitions
+
+# AskForHelp
+- a little assistance please
+- a little help here
+- ansaarnee
+- assistance
+- ayudame
+- campus and assistance
+- can anybody help me is there anybody out there that can help
+- can i get some assistance
+- can i get some assistance please
+- can i get some help please
+- can someone help me please
+- can you body help me
+- can you help me
+- hello, is anyone there?
+- help
+- help me
+- i didn't get that
+- i need a little help now
+- i need assistance
+- i need hellp
+- i need some assistance
+- i need some help
+- is anyone there
+- is anyone there?
+- maps and assistance
+- may i have some help
+- may i have some help please
+- may i have some help please help
+- please a little assistance
+- please help
+- please help me
+- sorry i didn't get that
+
+
+# FindBook
+- can i find books on the subject of {@FindBookSubject=dying hair}?
+- can you find a book by {@FindBookAuthor=john adams}
+- can you find a book on {@FindBookSubject=basketball}
+- can you find a book on basketball by williams
+- can you find a book on {@FindBookSubject=cups}
+- can you find a book on {@FindBookSubject=math}
+- can you find a book on math by john adams
+- can you find a book on {@FindBookSubject=physics}
+- can you find a book on {@FindBookSubject=science} by {@FindBookAuthor=dwight}
+- can you find me a book on {@FindBookSubject=cooking}
+- can you find me a book on {@FindBookSubject=cooking}?
+- can you find the book on basketball by williams
+- can you help me i'm looking for a book on {@FindBookSubject=science}
+- did you know about {@FindBookAuthor=tommy acree}
+- do we have a book called {@FindBookTitle=a practical guide to the galaxy} by john gilmore
+- do you carry a book on {@FindBookSubject=math} by {@FindBookAuthor=thompson}
+- do you carry a book on {@FindBookSubject=philosophy}
+- do you carry a book on {@FindBookSubject=science}
+- do you carry a book on {@FindBookSubject=stamps} by anthony
+- do you carry a book on {@FindBookSubject=wrestling} by anthony r.
+- do you carry any books on {@FindBookSubject=math} by {@FindBookAuthor=rawan}?
+- do you carry any books on {@FindBookSubject=tennis}
+- do you carry the book called {@FindBookTitle=the year 2000 and what to expect}
+- do you currently have on premise the book titled {@FindBookTitle=lord of the rings} by {@FindBookAuthor=j.r.r. tolkien}
+- do you guys have {@FindBookTitle=actual facts} here?
+- do you have a book
+- do you have a book by {@FindBookAuthor=dwight}
+- do you have a book by the author {@FindBookAuthor=frankie berverly}?
+- do you have a book called a {@FindBookTitle=practical guide to the galaxy} by john gilmore
+- do you have a book called {@FindBookTitle=fire pit and george daniels}?
+- do you have a book called {@FindBookTitle=the year 200 and what to expect}?
+- do you have a book on {@FindBookSubject=basketball}
+- do you have a book on {@FindBookSubject=candy} by williams
+- do you have a book on {@FindBookSubject=cooking}?
+- do you have a book on economics by enzo
+- do you have a book on {@FindBookSubject=exodus}
+- do you have a book on {@FindBookSubject=flipping coins} by {@FindBookAuthor=j rogers}
+- do you have a book on {@FindBookSubject=mary} {@FindBookSubject=c robbins} by {@FindBookAuthor=george lucas}
+- do you have a book on {@FindBookSubject=math}
+- do you have a book on {@FindBookSubject=math} by {@FindBookAuthor=dwight}
+- do you have a book on math by {@FindBookAuthor=enzo}
+- do you have a book on {@FindBookSubject=math} by {@FindBookAuthor=james williams}
+- do you have a book on {@FindBookSubject=math} by {@FindBookAuthor=thompson}
+- do you have a book on {@FindBookSubject=physics} by {@FindBookAuthor=anthony}
+- do you have a book on physics by goins?
+- do you have a book on {@FindBookSubject=physics} by {@FindBookAuthor=shavani}
+- do you have a book on {@FindBookSubject=physics} by {@FindBookAuthor=shivani}
+- do you have a book on {@FindBookSubject=science}
+- do you have a book {@FindBookTitle=play dough} by jim billy
+- do you have {@FindBookTitle=a practical guide to the galaxy} by {@FindBookAuthor=fillmore john}
+- do you have a {@FindBookTitle=practical guide to the galaxy} by john fillmore
+- do you have any books on {@FindBookSubject=physics} by {@FindBookAuthor=shivani}?
+- do you have any books written by {@FindBookAuthor=adrianne artis}?
+- do you have the book named {@FindBookTitle=catcher in the rye} by {@FindBookAuthor=j.d. salinger} available?
+- do you have the book on {@FindBookSubject=physics} by {@FindBookAuthor=shivani}?
+- find a book
+- find a book about {@FindBookSubject=physics}
+- find a book by {@FindBookAuthor=john adams}
+- find a book called go here by jim wicker
+- find a book called {@FindBookTitle=the dancing horse} by {@FindBookAuthor=billy ray}
+- find a book called {@FindBookTitle=the knights evening} by {@FindBookAuthor=tom rivers}
+- find a book on {@FindBookSubject=butterflies}
+- find a book on {@FindBookSubject=football}
+- find a book on {@FindBookSubject=football} by {@FindBookAuthor=ja rogers}
+- find a book on {@FindBookSubject=jumping}
+- find a book on {@FindBookSubject=math}
+- find a book on {@FindBookSubject=math} by {@FindBookAuthor=anthony}
+- find a book on microphones
+- find a book on physics by ja rogers
+- find a book on {@FindBookSubject=science}
+- find a book on shopping
+- find a book on spiders by m thompson
+- find book
+- find books by chichi adams
+- find me a book called {@FindBookTitle=documenter games}
+- find me a book called {@FindBookTitle=the hunger games}
+- find me a book on {@FindBookSubject=roses}
+- find the book called {@FindBookTitle=go shopping} by {@FindBookAuthor=billy thornton}
+- find the book called {@FindBookTitle=go shpping} by {@FindBookAuthor=billy thorton}
+- find the book titled {@FindBookTitle=on time} by {@FindBookAuthor=derek thompson}
+- {@FindBookSubject=funny} book called {@FindBookTitle=the hunger games}
+- have you met {@FindBookAuthor=tyron louis}
+- hello do you have a book on {@FindBookSubject=math} by {@FindBookAuthor=dwight}
+- hello i'm looking for a book on {@FindBookSubject=candy}
+- hello i'm looking for a book on {@FindBookSubject=math}
+- hello i'm looking for a book on {@FindBookSubject=science}
+- hi can you find a book on {@FindBookSubject=stamps}
+- hi do you carry a book on cooking?
+- hi i'm looking for a book on basketball by williams
+- hi i'm looking for a book on {@FindBookSubject=cooking}
+- hi i'm looking for a book on {@FindBookSubject=science}
+- i can't find the book series {@FindBookTitle=actual facts} by {@FindBookAuthor=dr. york} do you have it here?
+- i like a book on {@FindBookSubject=basketball}
+- i need a book
+- i need a book by {@FindBookAuthor=janet overton} on the {@FindBookSubject=us legal system} do you have that?
+- i need a book called {@FindBookTitle=an introduction to statistical learning} do you have it?
+- i need a book on {@FindBookSubject=physics}
+- i need some help finding {@FindBookAuthor=dr york's} books
+- i'd like a book about {@FindBookSubject=sex}
+- i'm looking for a book
+- i'm looking for a book about tennis
+- i'm looking for a book about {@FindBookSubject=tennis shoes}
+- i'm looking for a book on basketball by williams
+- i'm looking for a book on {@FindBookSubject=candy}
+- i'm looking for a book on {@FindBookSubject=chemistry}
+- i'm looking for a book on {@FindBookSubject=chemistry} by {@FindBookAuthor=bill}
+- i'm looking for a book on {@FindBookSubject=chemistry} by {@FindBookAuthor=thompson}
+- i'm looking for a book on {@FindBookSubject=math} by {@FindBookAuthor=dwight}
+- i'm looking for a book on math by {@FindBookAuthor=enzo}
+- i'm looking for a book on {@FindBookSubject=physics} by
+- i'm looking for a book on {@FindBookSubject=physics} by {@FindBookAuthor=anthony}
+- i'm looking for a book on {@FindBookSubject=physics} by {@FindBookAuthor=rawan}
+- i'm looking for a book on {@FindBookSubject=physics} by {@FindBookAuthor=shibani}
+- i'm looking for a book on {@FindBookSubject=physics} by {@FindBookAuthor=shivani}
+- i'm looking for a book on {@FindBookSubject=physics} by {@FindBookAuthor=thompson}
+- i'm looking for a book on {@FindBookSubject=science}
+- i'm looking for a book on {@FindBookSubject=skittles}
+- i'm looking for a book on sports by goins
+- i'm looking for a book on {@FindBookSubject=stamps}
+- i'm looking for a book on {@FindBookSubject=stamps} do you have any
+- i'm looking for a book that deals with {@FindBookSubject=chemistry}
+- i'm looking for a book with {@FindBookSubject=math} in it
+- i'm looking for a brooklyn science
+- i'm looking for {@FindBookTitle=a full conscience}
+- i'm looking for a {@FindBookSubject=math} book by {@FindBookAuthor=rawan}
+- i'm looking for a {@FindBookSubject=math} book by {@FindBookAuthor=rawan}.
+- i'm looking for {@FindBookTitle=actual facts series} by {@FindBookAuthor=dr malachi z. york}
+- i'm looking for {@FindBookTitle=brooklyn science}
+- i'm looking in a book on basketball by williams
+- looking for a book on {@FindBookSubject=stamps} by {@FindBookAuthor=enzo}
+- ok do you have any books
+- ok i'm looking for a book on {@FindBookSubject=physics}
+- ok i'm looking for some books
+- please find a book by m rogers
+- please find a book on baseball by mmm dripple
+- please find a book on baseball by va rogers
+- please find a book on {@FindBookSubject=basketball} by dribble
+- please find a book on basketball by m rogers
+- please find a book on football by mr rogers
+- please find a book on psychology by williams
+- please find a book on {@FindBookSubject=sports} by {@FindBookAuthor=m rogers}
+- please find a book on {@FindBookSubject=sychology} by {@FindBookAuthor=williams}
+- please find a book on {@FindBookSubject=weightlifting} by {@FindBookAuthor=m pooters}
+- please find an old book by m rogers
+- please find another book by emma rogers
+- please find another book by m rogers
+- please help i'm looking for a book on {@FindBookSubject=science}
+- search for a book on {@FindBookSubject=tigers}
+- search for all books by {@FindBookAuthor=rawan alhindi}
+- search for book named {@FindBookTitle=dark horses by day} written by {@FindBookAuthor=shivani nanan}
+- what books do you have
+- what books do you have by {@FindBookAuthor=dwight goins}
+- what is {@FindBookSubject=science} all about?
+- what room is {@FindBookAuthor=dr. millard's}?
+- where are the books on {@FindBookSubject=flying cars}?
+- where can i find a book on {@FindBookSubject=how to make guns}
+- where can i find books on {@FindBookSubject=child birth}
+- where can i find the book named {@FindBookTitle=little miss riding} by {@FindBookAuthor=harper foley}
+- where is the {@FindBookSubject=physics} department?
+- where would i find books on {@FindBookSubject=programming computers}
+- yes do you have a book on {@FindBookSubject=math} by {@FindBookAuthor=dwight}
+
+
+@ intent FindBook usesFeatures FindBookAuthor,FindBookSubject,FindBookTitle
+
+# GetDirections
+- can you draw a map of where the book called {@FindBookTitle=year 2000 and what to expect} is?
+- can you show me where the book entitled {@FindBookTitle=sex sex and more sex} is?
+- can you take me to where this book is?
+- display the directions to the book named {@FindBookTitle=blue ridge}.
+- how do i get to {@StudyRoom=room 1}?
+- show me how do i find the book titled {@FindBookTitle=doe god exist}{@FindBookTitle=.}
+- show me how to get to the book called {@FindBookTitle=50 shades of gray}
+- where is it located?
+- where is the book located?
+- where is the book titled {@FindBookTitle=gone with the wind}?
+- where is the {@FindBookSubject=math} section of books located?
+- where is the {@FindBookSubject=science} section of books located at?
+- which way do i go to get to {@StudyRoom=room 2?}
+
+
+# IsBookAvailable
+- is the book called {@FindBookTitle=the year 2000 and what to expect} by {@FindBookAuthor=york} available?
+- is the book named {@FindBookTitle=let's talk about the end} checked out?
+- is the book titled {@FindBookTitle=gone with the wind} available?
+- is the book titled {@FindBookTitle=pinocchio} by {@FindBookAuthor=carlo collodi} available?
+- is the book titled {@FindBookTitle=the hunger games} by author {@FindBookAuthor=suzanne collins} available?
+- is the book titled {@FindBookTitle=the lion, the witch and the wardrobe} by {@FindBookAuthor=c.s. lewis} checked out?
+
+
+# None
+- 3 easy steps.
+- alright
+- alright let's try it one more time
+- and
+- and there you go
+- blue soda has no oil.
+- bye bye
+- carrying a book
+- click for voice command
+- do it again
+- do you carry pillows?
+- do you have any tennis shoes
+- football
+- for you
+- good
+- hand with fingers
+- hello
+- hello again
+- hi
+- how are you
+- how do i get to the caffee from here?
+- i have the buttons gotta go
+- if we do
+- is anybody there
+- is that something out there
+- log out
+- maybe
+- oh cool
+- oh nothing
+- ok
+- ok then
+- people call me
+- play
+- please stop
+- please tell me
+- subject title
+- test 123 test test 1
+- testing
+- thank you
+- that really hurt try going slower next time
+- the younger sister of blank panther is called shuri
+- try again
+- us navy
+- we have to also showcase
+- well hello
+- what about something on
+- what happen
+- what time is it?
+- where can i get a quick bite to eat?
+- where can i locate the study room?
+- where did you come from
+- which way is up?
+- why
+- why not me
+- yeah
+- you go
+- you have reached the
+- you would find for you
+
+
+# ReserveStudyRoom
+- are there any rooms available?
+- are there any study rooms available?
+- are there rooms available?
+- can i book a conference room?
+- can i reserve a conference room?
+- can i reserve a study room?
+- do you have a room?
+- do you have an open conference room available now?
+- do you have any video conference rooms?
+- i'd like to reserve a study room
+- is there a conference room available?
+
+
+> # Entity definitions
+
+@ ml FindBookAuthor
+
+@ ml FindBookSubject
+
+@ ml FindBookTitle
+
+@ ml StudyRoom
+
+
+> # PREBUILT Entity definitions
+
+
+> # Phrase list definitions
+
+
+> # List entities
+
+> # RegEx entities
+
+

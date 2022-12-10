@@ -1,0 +1,55 @@
+
+> LUIS application information
+> !# @app.name = OwlseyBot(composer)-LuisDialog.en-us.lu
+> !# @app.desc = Model for OwlseyBot app, targetting composer
+> !# @app.versionId = 0.1
+> !# @app.culture = en-us
+> !# @app.luis_schema_version = 7.0.0
+> !# @app.tokenizerVersion = 1.0.0
+
+
+> # Intent definitions
+
+# _Interruption
+- abort
+- cancel
+- end this now
+- exit
+- forget about it
+- help
+- how do you work
+- i need help
+- i need some assistance
+- im stuck
+- just stop already
+- never mind
+- quit
+- what can you do
+- what can you help me with
+
+
+# None
+
+
+# NumberInput_Response_Hz4cWV
+- video conference room {@roomSelected}
+- room number {@roomSelected}
+- room {@roomSelected}
+
+
+> # Entity definitions
+
+@ ml roomSelected
+
+
+> # PREBUILT Entity definitions
+
+
+> # Phrase list definitions
+
+
+> # List entities
+
+> # RegEx entities
+
+

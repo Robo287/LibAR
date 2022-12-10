@@ -1,0 +1,28 @@
+[import](common.lg)
+
+# SendActivity_HelpOverview()
+[Activity
+    Text = ${SendActivity_HelpOverview_text()}
+]
+
+# SendActivity_HelpOverview_text()
+- I can help you find books, book a study room, and call a human for you. Just ask.
+- I'm Owlsey, your FAU Virtual Librarian. I can help you find a book on a subject, or title and even an author. Just ask.
+- I can help you find a book, and book a study room. If all you want to do is find out room availability, just ask.
+
+> Imported: 95949fcc5eb2077f9cffd10817a11340
+- I can help you determine if we have a book you'd like to check out, or not.
+- I can show you directions to where a section of books is.
+- I can guide you to where a specific book is if you ask me. All you have to do is ask, and you can just follow me.
+- One of the things you can ask is "I'm searching for a book on Computer Science by Dwight Goins". I'll then search the FAU Library database to see if we have it.
+- You can say something like, "Do you have the book on physics by Shivani?". I'll go search the archives and tell you if we do or not.
+- You can say something like, "Can you guide me to where your books by Rawan are"? I'll do my best to search and take you there, if you follow me.
+- You can tell me that you'd like to reserve a study room tomorrow at 9pm. I'll check to see if any room is available and try to reserve it for you.
+- You can also tell me go away, for a cracker of course!
+- If you need human assistance I can call someone from the Library to help you.
+- Try saying "Do you have a book on economics by Enzo"? I will go and look for you.
+- You can ask me things like "Do you carry books on paitings by the famous Anthony "? If we do, I'll let you know where to find it.
+- Some things you might want to say is "Do you have any books by Dwight?"
+- I'll even entertain the question, "Do you have "Cry me a river by the author Dwight Goins"
+- Ask me something. If I don't know I'll tell you.
+- Owlsey the great knows all things. Just ask.

@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = test_LibAR_Voice_Luis
+build_property.ProjectDir = C:\unity\LibAR\unitTests\test-LibAR-Voice-Luis\

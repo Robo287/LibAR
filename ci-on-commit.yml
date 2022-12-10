@@ -1,0 +1,56 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+name: $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+
+pool:
+  name: Unity-Local-Pool
+  vmImage: windows-latest
+
+steps:
+- script: echo starting unity build for hololens2!
+  displayName: 'HoloLens'
+
+- script: echo $(Build.BuildNumber) //output updated build number
+  displayName: 'Build number'
+
+# PowerShell
+# Run a PowerShell script on Linux, macOS, or Windows
+- task: PowerShell@2
+  inputs:
+    targetType: 'filePath'
+    filePath: $(System.DefaultWorkingDirectory)\ci-cd-buildscripts\changeVersionNumber.ps1
+    arguments: > # Use this to avoid newline characters in multiline string    
+  displayName: 'Applying Build Number as Version Number to Unity'
+
+- task: UnityBuildTask@3
+  inputs:
+    buildTarget: 'WindowsStoreApps'
+    outputPath: '$(Build.BinariesDirectory)'
+    outputFileName: '$(Build.BuildNumber)'
+    
+# PowerShell
+# Run a PowerShell script on Linux, macOS, or Windows
+- task: PowerShell@2
+  inputs:
+    targetType: 'filePath'
+    filePath: $(System.DefaultWorkingDirectory)\ci-cd-buildscripts\changeVersionNumber.ps1
+    arguments: > # Use this to avoid newline characters in multiline string
+  displayName: 'Applying Build Number as Version Number To .Net Assemblies'
+
+- task: VSBuild@1
+  inputs:
+    solution: '$(Build.BinariesDirectory)\**\*.sln'
+    platform: 'arm64'
+    configuration: 'master'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.BinariesDirectory)\$(Build.BuildNumber)\AppPackages'
+    ArtifactName: '$(Build.BuildNumber)'
+    publishLocation: 'Container'

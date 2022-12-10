@@ -1,0 +1,16 @@
+{
+  "profileName": "OwlseyBot",
+  "jobId": "48de1ac7-d35a-4b93-8ac0-d9253e7b6f41",
+  "projectId": "46449.84853089833",
+  "time": "2022-09-11T16:49:22.721Z",
+  "log": [
+    "Creating Azure resources...",
+    "Checking the Existence of the Resource Group ...",
+    "Use the Resource Group: FAU-AR-digitaltwin at eastus2",
+    "> Creating App Registration ...",
+    "Start to add password for App, Id : 276e1971-3e03-4617-a647-7978f0aee911",
+    "> Create App Registration Success! ID: 276e1971-3e03-4617-a647-7978f0aee911",
+    "{\"stack\":\"TypeError: Cannot read property 'hostname' of null\\n    at BotProjectProvision.create (C:\\\\Users\\\\dngoi\\\\AppData\\\\Local\\\\Programs\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\dist\\\\extension.js:278070:55)\\n    at async AzurePublisher.asyncProvision (C:\\\\Users\\\\dngoi\\\\AppData\\\\Local\\\\Programs\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\dist\\\\extension.js:278539:34)\",\"message\":\"Cannot read property 'hostname' of null\"}",
+    "Provisioning completed 1 items before encountering a problem. {\"stack\":\"TypeError: Cannot read property 'hostname' of null\\n    at BotProjectProvision.create (C:\\\\Users\\\\dngoi\\\\AppData\\\\Local\\\\Programs\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\dist\\\\extension.js:278070:55)\\n    at async AzurePublisher.asyncProvision (C:\\\\Users\\\\dngoi\\\\AppData\\\\Local\\\\Programs\\\\Bot Framework Composer\\\\resources\\\\app.asar.unpacked\\\\extensions\\\\azurePublish\\\\dist\\\\extension.js:278539:34)\",\"message\":\"Cannot read property 'hostname' of null\"}. See provision.OwlseyBot.log in your bot folder"
+  ]
+}
